@@ -1,9 +1,7 @@
 import openai
 import os
-
 import json
 import pprint
-
 import re
 from data_generator import DataGenerator
 
