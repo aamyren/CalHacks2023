@@ -1,5 +1,5 @@
 ## CalHacks2023 - Exploration of sentiment analysis with GPT-4
-Project for the CalHacks 2023 AI hackathon at UC Berkeley, exploring sentiment analysis with the new GPT-4 API. It involves a web scraper to collect public forum stock discussions into data that can be processed and used to train a language model, and an chatbot interface for users to interact directly with this model. Since this is an experimental project in which the majority of this code was completed in the 36-hour span of the hackathon, it had to be cleaned up a bit before being made in a public repo, and will hopefully be improved and further expanded in the future (.❛ ᴗ ❛.)
+Project for the CalHacks 2023 AI hackathon at UC Berkeley, exploring sentiment analysis with the new GPT-4 API. It involves a web scraper to collect public forum stock discussions into data that can be processed and used to train a language model, and an chatbot interface for users to interact directly with this model. Since this is an experimental project in which the majority of this code was completed in the 36-hour span of the hackathon, it had to be cleaned up a bit before being made in a public repo, and will hopefully be improved and further expanded on in the future (.❛ ᴗ ❛.)
 
 
 You can check out the details & potential future improvements for this project here:
