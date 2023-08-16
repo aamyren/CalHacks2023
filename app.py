@@ -26,13 +26,10 @@ def construct_index(directory_path):
     llm_predictor = LLMPredictor(
         llm=openai(temperature=0.7, model_name="gpt-4.0613", max_tokens=num_outputs)
     )
-
     documents = SimpleDirectoryReader(directory_path, num_files_limit=1).load_data()
-
     index = GPTVectorStoreIndex.from_documents(
         documents, llm_predictor=llm_predictor, prompt_helper=prompt_helper
     )
-
     index.storage_context.persist("index.json")
 
     return index
@@ -61,4 +58,5 @@ iface = gr.Interface(
 
 # set input directory, in this case "demo-data" can be changed to "generated_docs"
 index = construct_index("demo-data")
+# launch app
 iface.launch(share=True)
