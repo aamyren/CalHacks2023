@@ -43,7 +43,7 @@ def chatbot(input_text):
     index.storage_context.persist("index.json")
     
     query_engine = index.as_query_engine()
-    # set up prompy for the chatbot
+    # set up prompt for the chatbot
     response = query_engine.query(
         """The document containes posts scraped from reddit and their comments regarding different stocks. There is title, URL, post content, comment, and timestamp information. Please refer to the documents provided to answer questions in a detailed manner about user sentiments regarding the stocks. Unless otherwise specified, assume the user is asking about recent discussions (within one week)"""
         + input_text
