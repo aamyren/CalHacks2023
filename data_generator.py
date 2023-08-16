@@ -1,7 +1,5 @@
 import json
-
 import os
-
 
 class DataGenerator:
     def __init__(self):
